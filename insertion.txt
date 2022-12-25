@@ -1,0 +1,71 @@
+[22,27,16,2,18,6] -> Insertion Sort
+
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+Big-O gösterimini yazınız.
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+Average case: Aradığımız sayının ortada olması
+Worst case: Aradığımız sayının sonda olması
+Best case: Aradığımız sayının dizinin en başında olması.
+
+
+22 mi  27  mi kucuk --> 22 solda kalsin
+22 ,27,16, 2,18,6
+27 mi  16 mi  kucuk--> 16 kucuk olan sola yer degistir
+22 ,16 ,27 , 2,18,6
+22 mi 16 mi kucuk  --> 16 sola kayicak
+16 ,22 ,27, 2,18,6
+27 mi 2 mi  kucuk  --> 2 sola kayicak
+16, 22 ,2 ,27, 18 ,6
+22 mi 2 mi kucuk --> 2 sola kayicak
+16 ,2, 22 27 18 6
+2 mi 16 mi kucuk --> 2 sola,2 artik en solda.
+2 ,16 ,22 ,27 ,18, 6
+27 mi 18 mi kucuk  --> 18 sola kayicak
+2 ,16, 22, 18 ,27, 6
+18 mi 22  mi kucuk  --> 18 solda kayicak
+2 ,16 18, 22 ,27, 6
+6  mi 27' mi kucuk  --> 6 sola kayicak
+2, 16 ,18 ,22, 6 ,27
+6 mi 22' mi kucuk  --> 6 sola kayicak
+2 ,16, 18 ,6 ,22, 27
+6  mi 18 mi  kucuk  --> 6 sola kayicak
+2, 16 , 6 ,18, 22 ,27
+6 mi 16 mi kucuk  --> 6 sola kayicak
+2, 6 ,16 ,18, 22, 27
+6 mi 2 mi kucuk  --> 2 kucuk 6 oldugu yerde kalicak
+2, 6, 16, 18, 22 , 27
+----------------------------------------------------------
+işlem sayısı n*(n+1)/2 = (n^2+n)/2
+Big-O gösterimi O(n^2)dir.
+----------------------------------------------------
+18 sayisi icin:
+6 elemanli dizinin 3.indexinde bulunması : average 'dir yani tam ortasında.
+---------------------------------------------------------------------------------------
+
+Selection Sort:
+
+
+dizi --> [7,3,5,8,2,9,4,15,6]
+1- en kucuk olani bul ilk indexe al.diger sayiyida onun indexine koy.
+2 , 3 ,5, 8 ,7 ,9 ,4 15 ,6
+2- ikinci kucuk olan aranir  3 'dur ama degismez sıraya uygun.
+3-daha kucuk olan aranir
+2 3 4  8 7 9 5 15 6- --> 
+8 den daha kucuk olan --> 5
+2 3 4 5 7 9 8 15 6
+7' den kucuk olan aranir--> 6
+2 3 4 5 6 9 8 15 7
+9'dan kucuk olan aranir --> 7
+2 3 4 5 6 8 7 15 9
+8 ve 7 yer degistirecek
+2 3 4 5 6 7 8 15 9
+8 in yeri dogru 
+2 3 4 5 6 7 8 15 9
+15 in yeri yanlis 9dan buyuk
+2 3 4 5 6 7 8 9 15
+
+[2,3,4,5,6,7,8,9,15]
+
