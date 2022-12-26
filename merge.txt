@@ -1,0 +1,29 @@
+16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+
+1- liste 2 ye bolunsun.
+
+16 , 21 ,11 ----  8 ,12, 22
+
+ilk kismi ve ikinci kismi 2'ye bolelim
+[16, 21]- [11]   -[8 ,12] - [22]
+16 kucuk 21 den  8 kucuk 12 den 
+[16 ,21]  [11]   [8 ,12 ]--[22]
+tek sirali 
+[16 ][21][ 11][ 8 ][12][ 22]
+ikili gruplama
+[16, 21] --[ 8 ,11] -- [12, 22
+ilk 2 birlesecek,siralandi
+[16 21 8 11] --> [8 11 16 21]
+son 2 birlesicek 
+[8 11 16 21 12 22]
+sırala ,hepsini
+[8 11 12 16 21 22 ]
+---------------------
+Big O(nlogn) 
+
+
+
+
